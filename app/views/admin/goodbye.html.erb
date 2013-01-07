@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title> <%= @text %> </title>
+	</head>
+	<body>
+	  <p> <%= @text %> </p>
+	  <%= link_to('Say Goodbye', :controller => 'admin', :action => 'goodbye') %> <br>
+	  <%= link_to('Say Goodbye using path', admin_goodbye_path) %>
+	  <p> <a href="/admin/hello"> Say hello everyone</a> </p>
+	  <p> <%= @texts %> </p>
+
+	</body>
+</html>

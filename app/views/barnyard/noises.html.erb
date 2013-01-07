@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Barnyard</title>
+	</head>
+	
+	<body>
+		<% for animal in @barnyard.animals -%>
+		  <p> The <%= animal.class %> named <%= animal.title %> says: <%= animal.noise %>
+		  </p>
+		<% end %>
+		<p> 
+			<% @barnyard.animals.each do |x| %>
+				The <%= x.title %> says
+				<%= x.noise %> <br>
+			<% end %>
+		</p>
+		<br>
+		
+		<%= debug(@barnyard) %>
+	</body>
+</html>
